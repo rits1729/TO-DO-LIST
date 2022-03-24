@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Getting icon form fontawesone website-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--USing google apis to fetch fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/fontawesome.min.css"
+        integrity="sha512-KVdV5HNnN1f6YOANbRuNxyCnqyPICKUmQusEkyeRg4X0p8K1xCdbHs32aA7pWo6WqMZk0wAzl29cItZh8oBPYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="todo-header">
+            <h1>TO-DO LIST</h1>
+        </div>
+    </header>
+
+    <!-- Creating a from element to take input for items given by user -->
+    <div class="todo-form">
+        <form>
+
+            <input type="text" class="todo-text" placeholder="new task">
+            <!-- I have used a fontawesome icon for add button-->
+            <button class="btn" type="submit"><i class="fa-solid fa-plus"></i></button>
+        </form>
+    </div>
+    <!-- This DIV contains list of items which will be automatically added using js code -->
+    <div class="todo-container">
+
+        <ul class="todo-list">
+
+        </ul>
+
+
+    </div>
+    <!-- Contains the number of items -->
+    <div class="stack">
+        <i class="fa-solid fa-layer-group icon"></i>
+        <h4>Task Left <span class="numitem"> 0</span>
+        </h4>
+    </div>
+
+    <!-- Javascript file -->
+    <script src="index.js"></script>
+</body>
+
+</html>
